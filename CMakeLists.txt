@@ -6,3 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(sbt VERSION 0.0.0 LANGUAGES C CXX)
 
 add_subdirectory(time-set-cxx11)
+
+if (WIN32)
+  add_subdirectory(time-set-win)
+endif()
